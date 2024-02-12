@@ -12,4 +12,15 @@
     
 def rps_match(user_choice, computer_choice):
     # Add your code here
-    pass
+    if (user_choice > 2 or computer_choice > 2):
+        return "invalid input"
+    elif (user_choice == computer_choice):
+        return 0
+    elif (user_choice == 0 and computer_choice == 2):
+        return 1
+    elif (user_choice == 2 and computer_choice == 1):
+        return 1
+    elif (user_choice == 1 and computer_choice == 0):
+        return 1
+    else:
+        return -1
